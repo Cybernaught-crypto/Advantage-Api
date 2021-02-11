@@ -11,7 +11,4 @@ namespace Advantage.Api.Models
         public DbSet<Server> Servers { get; set; }
     }
 }
-    }
-}
-}
-}
+
