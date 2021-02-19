@@ -53,15 +53,13 @@ namespace Advantage.API
             app.UseCors("CorsPolicy");
 
 
-
-
-
             var nCustomers = 20;
             var nOrders = 1000;
             seed.SeedData(nCustomers, nOrders);
 
+
             app.UseMvc(routes =>
-                routes.MapRoute("default", "api/{controller}/{action}/{id?}")
+               routes.MapRoute("default", "api/{controller}/{action}/{id?}")
             );
         }
     }
